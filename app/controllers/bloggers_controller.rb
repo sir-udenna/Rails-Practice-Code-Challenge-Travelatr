@@ -20,3 +20,7 @@ class BloggersController < ApplicationController
         params.require(:blogger).permit(:name, :bio, :age)
     end
 end
+
+##### how to make total likes prettier ####
+
+

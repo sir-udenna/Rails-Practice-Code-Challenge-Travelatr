@@ -4,4 +4,10 @@
 <p>Bio: <%=@blogger.bio%><p><br> 
 
 
+<% total_like = 0%>
 
+<% @blogger.posts.each do |post| %>
+  <% total_like += post.likes  %>
+  <% end %>
+
+  <p> Total Likes: <%= total_like %><p>
