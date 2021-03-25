@@ -4,3 +4,11 @@
 <% @destination.posts.each do |post| %>
     <p><li><%= post.title %></li><p>
     <% end %>
+
+
+<%= @destination.posts[-1].content %><br><hr>
+<%= @destination.posts[-2].content %><br><hr>
+<%= @destination.posts[-3].content %><br><hr>
+
+<p> Average Age of Bloggers who wrote about <%="#{@destination.name}:    "%><%= @destination.avg_age %>
+

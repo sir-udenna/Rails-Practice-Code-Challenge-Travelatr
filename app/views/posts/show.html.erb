@@ -2,3 +2,5 @@
 <hr>
 
 <%= @post.content %> 
+<p> Author: <%= link_to @post.blogger.name, bloggers_path(@blogger) %><p><br>
+<p> Destination: <%= link_to @post.destination.name, destinations_path(@destinations) %><p><br>
