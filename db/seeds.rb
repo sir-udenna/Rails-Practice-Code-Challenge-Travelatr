@@ -14,7 +14,6 @@
   })
 end
 
-
 10.times do
   blogger = Blogger.create({
     name: Faker::Name.name,
