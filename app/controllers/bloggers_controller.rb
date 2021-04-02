@@ -13,7 +13,8 @@ class BloggersController < ApplicationController
 
     def create
         @blogger = Blogger.create(blogger_params)
-        redirect_to bloggers_path(@blogger)
+        redirect_to blogger_path(@blogger)
+        #"bloggers_path" sends to index [all bloggers]
     end
 
     def blogger_params

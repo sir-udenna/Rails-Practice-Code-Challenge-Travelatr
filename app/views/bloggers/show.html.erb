@@ -8,6 +8,9 @@
 
 <% @blogger.posts.each do |post| %>
   <% total_like += post.likes  %>
+  <p><%=link_to "#{post.title}",post %></p>
   <% end %>
 
   <p> Total Likes: <%= total_like %><p>
+
+

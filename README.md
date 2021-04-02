@@ -12,7 +12,7 @@ Our founder - a world renowned ice-cream-eating contest champion, gourmet hot-do
 
 We envision a relationship between our models as follows:
 
-Blogger -< Post >- Destination
+Blogger -< Post >- Destination <!-- Post has a blogger and destination id on top of its own id (because post is a joiner)-->
 
 
 For each model, we have a specific vision in mind:
